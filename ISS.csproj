@@ -1,0 +1,470 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{2C1CBA4F-BAD7-4311-A0E4-14C5CFFCD861}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>ISS</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\Inventory System\v16\.suo" />
+    <None Include=".vs\Inventory System\v16\Server\sqlite3\db.lock" />
+    <None Include=".vs\Inventory System\v16\Server\sqlite3\storage.ide" />
+    <None Include=".vs\Inventory\v16\.suo" />
+    <None Include=".vs\Inventory\v16\Browse.VC.db" />
+    <None Include=".vs\Inventory\v16\Server\sqlite3\db.lock" />
+    <None Include=".vs\Inventory\v16\Server\sqlite3\storage.ide" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\.signature.p7s" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\documentation\Analyzer Configuration.md" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\documentation\Microsoft.CodeAnalysis.FxCopAnalyzers.md" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\documentation\Microsoft.CodeAnalysis.FxCopAnalyzers.sarif" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\AllRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\AllRulesDisabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\AllRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\DataflowRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\DataflowRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\DesignRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\DesignRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\DocumentationRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\DocumentationRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\GlobalizationRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\GlobalizationRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\InteroperabilityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\InteroperabilityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\MaintainabilityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\MaintainabilityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\NamingRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\NamingRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\PerformanceRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\PerformanceRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\PortedFromFxCopRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\PortedFromFxCopRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\ReliabilityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\ReliabilityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\SecurityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\SecurityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\UsageRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\editorconfig\UsageRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\EULA.rtf" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8.nupkg" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\AllRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\AllRulesDisabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\AllRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\DataflowRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\DataflowRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\DesignRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\DesignRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\DocumentationRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\DocumentationRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\GlobalizationRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\GlobalizationRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\InteroperabilityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\InteroperabilityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\AllRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\BasicCorrectnessRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\BasicDesignGuidelineRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\ExtendedCorrectnessRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\ExtendedDesignGuidelineRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\GlobalizationRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\ManagedMinimumRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\MinimumRecommendedRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\legacy\SecurityRules.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\MaintainabilityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\MaintainabilityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\NamingRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\NamingRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\PerformanceRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\PerformanceRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\PortedFromFxCopRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\PortedFromFxCopRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\ReliabilityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\ReliabilityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\SecurityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\SecurityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\UsageRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\rulesets\UsageRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\tools\install.ps1" />
+    <None Include="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\.signature.p7s" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\documentation\Analyzer Configuration.md" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\documentation\Microsoft.CodeAnalysis.VersionCheckAnalyzer.md" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\documentation\Microsoft.CodeAnalysis.VersionCheckAnalyzer.sarif" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\AllRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\AllRulesDisabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\AllRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\DataflowRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\DataflowRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\PortedFromFxCopRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\PortedFromFxCopRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\ReliabilityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\editorconfig\ReliabilityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\EULA.rtf" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8.nupkg" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\AllRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\AllRulesDisabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\AllRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\DataflowRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\DataflowRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\PortedFromFxCopRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\PortedFromFxCopRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\ReliabilityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\rulesets\ReliabilityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\tools\install.ps1" />
+    <None Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\.signature.p7s" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\documentation\Analyzer Configuration.md" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\documentation\Microsoft.CodeQuality.Analyzers.md" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\documentation\Microsoft.CodeQuality.Analyzers.sarif" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\AllRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\AllRulesDisabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\AllRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\DataflowRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\DataflowRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\DesignRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\DesignRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\DocumentationRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\DocumentationRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\MaintainabilityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\MaintainabilityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\NamingRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\NamingRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\PerformanceRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\PerformanceRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\PortedFromFxCopRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\PortedFromFxCopRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\ReliabilityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\ReliabilityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\SecurityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\SecurityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\UsageRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\editorconfig\UsageRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\EULA.rtf" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\Microsoft.CodeQuality.Analyzers.2.9.8.nupkg" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\AllRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\AllRulesDisabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\AllRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\DataflowRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\DataflowRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\DesignRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\DesignRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\DocumentationRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\DocumentationRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\MaintainabilityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\MaintainabilityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\NamingRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\NamingRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\PerformanceRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\PerformanceRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\PortedFromFxCopRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\PortedFromFxCopRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\ReliabilityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\ReliabilityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\SecurityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\SecurityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\UsageRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\rulesets\UsageRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\tools\install.ps1" />
+    <None Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\.signature.p7s" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\documentation\Analyzer Configuration.md" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\documentation\Microsoft.NetCore.Analyzers.md" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\documentation\Microsoft.NetCore.Analyzers.sarif" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\AllRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\AllRulesDisabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\AllRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\DataflowRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\DataflowRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\GlobalizationRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\GlobalizationRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\InteroperabilityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\InteroperabilityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\PerformanceRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\PerformanceRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\PortedFromFxCopRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\PortedFromFxCopRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\ReliabilityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\ReliabilityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\SecurityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\SecurityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\UsageRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\editorconfig\UsageRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\EULA.rtf" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\Microsoft.NetCore.Analyzers.2.9.8.nupkg" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\AllRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\AllRulesDisabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\AllRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\DataflowRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\DataflowRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\GlobalizationRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\GlobalizationRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\InteroperabilityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\InteroperabilityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\PerformanceRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\PerformanceRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\PortedFromFxCopRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\PortedFromFxCopRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\ReliabilityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\ReliabilityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\SecurityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\SecurityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\UsageRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\rulesets\UsageRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\tools\install.ps1" />
+    <None Include="packages\Microsoft.NetCore.Analyzers.2.9.8\tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\.signature.p7s" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\documentation\Analyzer Configuration.md" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\documentation\Microsoft.NetFramework.Analyzers.md" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\documentation\Microsoft.NetFramework.Analyzers.sarif" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\AllRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\AllRulesDisabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\AllRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\DataflowRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\DataflowRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\DesignRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\DesignRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\PortedFromFxCopRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\PortedFromFxCopRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\SecurityRulesDefault\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\editorconfig\SecurityRulesEnabled\.editorconfig" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\EULA.rtf" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\Microsoft.NetFramework.Analyzers.2.9.8.nupkg" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\AllRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\AllRulesDisabled.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\AllRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\DataflowRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\DataflowRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\DesignRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\DesignRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\PortedFromFxCopRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\PortedFromFxCopRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\SecurityRulesDefault.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\rulesets\SecurityRulesEnabled.ruleset" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\tools\install.ps1" />
+    <None Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\tools\uninstall.ps1" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPart.Designer.cs">
+      <DependentUpon>AddPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inhouse.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="MnScrn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MnScrn.Designer.cs">
+      <DependentUpon>MnScrn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyPart.Designer.cs">
+      <DependentUpon>ModifyPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyProduct.Designer.cs">
+      <DependentUpon>ModifyProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourced.cs" />
+    <Compile Include="Part.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="stringManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddPart.resx">
+      <DependentUpon>AddPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MnScrn.resx">
+      <DependentUpon>MnScrn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyPart.resx">
+      <DependentUpon>ModifyPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyProduct.resx">
+      <DependentUpon>ModifyProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\cs\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\de\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\es\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\fr\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\it\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\ja\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\ko\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\Microsoft.CodeAnalysis.VersionCheckAnalyzer.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\pl\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\pt-BR\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\ru\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\tr\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\zh-Hans\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\zh-Hant\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\cs\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\de\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\es\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\fr\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\Humanizer.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\it\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\ja\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\ko\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.CodeQuality.Analyzers.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.CodeQuality.CSharp.Analyzers.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\pl\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\pt-BR\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\ru\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\tr\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\zh-Hans\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\zh-Hant\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\cs\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\de\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\es\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\fr\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Humanizer.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\it\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\ja\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\ko\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\pl\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\pt-BR\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\ru\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\tr\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\zh-Hans\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\zh-Hant\Microsoft.CodeQuality.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\cs\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\de\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\es\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\fr\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\it\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\ja\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\ko\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.NetCore.Analyzers.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.NetCore.CSharp.Analyzers.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\pl\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\pt-BR\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\ru\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\tr\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\zh-Hans\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\zh-Hant\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\cs\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\de\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\es\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\fr\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\it\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\ja\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\ko\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.NetCore.Analyzers.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\pl\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\pt-BR\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\ru\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\tr\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\zh-Hans\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\zh-Hant\Microsoft.NetCore.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\cs\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\de\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\es\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\fr\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\it\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\ja\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\ko\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.NetFramework.Analyzers.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.NetFramework.CSharp.Analyzers.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\pl\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\pt-BR\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\ru\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\tr\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\zh-Hans\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\zh-Hant\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\cs\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\de\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\es\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\fr\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\it\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\ja\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\ko\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\pl\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\pt-BR\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\ru\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\tr\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\zh-Hans\Microsoft.NetFramework.Analyzers.resources.dll" />
+    <Content Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\zh-Hant\Microsoft.NetFramework.Analyzers.resources.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\ISS\v16\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
